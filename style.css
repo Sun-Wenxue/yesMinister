@@ -15,8 +15,8 @@
     text-align: center;
 }
 .header-content {
-    margin-left: 200px;
-    margin-right: 260px;
+    margin-left: 240px;
+    margin-right: 240px;
     text-align: left;
 }
 .header-img {
@@ -24,8 +24,8 @@
 }
 .content {
     flex:auto;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
     padding: 0px;
 }
 .cover {
@@ -46,12 +46,57 @@
 /* p {
     padding: 10px;
 } */
+ .header img {
+    border-radius: 10px;
+ }
+ .header p {
+    color: gray;
+    padding : 0px;
+    margin: 0px;
+    
+}
+.cover p {
+    text-indent: 2em;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0px;
+    margin-right: 20px;
+}
+.cover-img img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+h1{
+    font-weight: normal;
+    margin-bottom: 0%;
+}
 
 #visit {
     display: flex;
     justify-content:flex-end;
     font-size: 12px;
-    margin:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+#visit table {
+    border-collapse: collapse;
+    border-right: 1px solid lightgray;
+    
+}
+#visit th{
+    color:cornflowerblue;
+    padding-left: 10px;
+
+}
+#visit td{
+    color:gray;
+    border-right: 1px solid lightgray;
+    padding-right: 10px;
+}
+#visit td:last-child{
+    border-right: none;
 }
 
 table{
@@ -61,10 +106,26 @@ table{
 #info {
     display: flex;
     flex-grow: 1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 2;
+}
+#info th {
+    padding-right: 50px;
+}
+#info td {
+    color: gray;
+    padding-right: 100px;
 }
 .actor {
     display: inline-flex;
 }
 img{
     margin: 10px;
+    margin-bottom: 20px;
 }
+a:link {color:#000000;text-decoration:underline;}      /* 未访问链接*/
+a:visited {color:#0000FF;text-decoration:underline;}  /* 已访问链接 */
+a:hover {color:#FF00FF;text-decoration:underline;}  /* 鼠标移动到链接上 */
+a:active {color:#0000FF;text-decoration:underline;}  /* 鼠标点击时 */

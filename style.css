@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .container {
     display:flex;
     background-color: #f2f2f2;
@@ -40,7 +44,8 @@
     background-color: #ffffff;
     margin-top: 0px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* p {
@@ -72,6 +77,30 @@ h1{
     font-weight: normal;
     margin-bottom: 0%;
 }
+h2 {
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 25px;
+}
+h3 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight:500;
+    color:royalblue;
+}
+h4 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 400;
+    text-wrap:none;
+}
 
 #visit {
     display: flex;
@@ -81,9 +110,7 @@ h1{
     margin-bottom: 20px;
 }
 #visit table {
-    border-collapse: collapse;
-    border-right: 1px solid lightgray;
-    
+    border-collapse: collapse;   
 }
 #visit th{
     color:cornflowerblue;
@@ -101,14 +128,14 @@ h1{
 
 table{
     text-align: left;
+    font-size: 15px;
 }
 
 #info {
     display: flex;
     flex-grow: 1;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     line-height: 2;
 }
 #info th {
@@ -123,9 +150,59 @@ table{
 }
 img{
     margin: 10px;
+    margin-left: 20px;
+}
+a:link {color:#0000FF;text-decoration:underline;}      /* 未访问链接*/
+a:visited {color:blueviolet;text-decoration:underline;}  /* 已访问链接 */
+a:hover {color:blueviolet;text-decoration:underline;}  /* 鼠标移动到链接上 */
+a:active {color:blueviolet;text-decoration:underline;}  /* 鼠标点击时 */
+
+.sub-header {
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+#basic {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-collapse: collapse;
     margin-bottom: 20px;
 }
-a:link {color:#000000;text-decoration:underline;}      /* 未访问链接*/
-a:visited {color:#0000FF;text-decoration:underline;}  /* 已访问链接 */
-a:hover {color:#FF00FF;text-decoration:underline;}  /* 鼠标移动到链接上 */
-a:active {color:#0000FF;text-decoration:underline;}  /* 鼠标点击时 */
+#basic tr{
+    border-bottom: 1px solid lightgray;
+}
+#basic th {
+    padding: 10px;
+    padding-right: 50px;
+    color: gray;
+}
+#basic td {
+    padding: 10px;
+    padding-right: 100px;
+}
+
+#header-deco {
+    height: 25px;    
+    border-left-style: solid;
+    border-left-color:mediumblue;
+    border-left-width: 10px;
+}
+#line-gray {
+    height: 1px;
+    background-color:lightgray;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* .actor-img img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+.actor-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    margin-right: 20px;
+}
